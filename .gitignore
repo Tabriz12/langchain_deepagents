@@ -1,0 +1,12 @@
+__pycache__/
+# Ignore dynaconf secret files
+.secrets.*
+.vscode/
+.idea/
+.DS_Store
+*.egg-info/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.swp

@@ -74,22 +74,29 @@ target-version = "py312"
 
 select = [
     # pycodestyle
-    "E",
+    "E", "W",
     # Pyflakes
     "F",
     # pyupgrade
     "UP",
     # flake8-bugbear
     "B",
+    # Bandit
+    "S",
     # flake8-simplify
     "SIM",
     # isort
     "I",
+    # Naming convention
+    "N",
+    # # annotations
+    "ANN",
+    
 ]
 
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
-unfixable = ['F401']
+unfixable = ['F401', ]
 
 # Allow unused variables when underscore-prefixed.
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
